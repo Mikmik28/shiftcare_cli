@@ -7,6 +7,13 @@ command = ARGV[0]
 source = ARGV[1]
 query  = ARGV[2]
 
+if command.nil? || source.nil?
+  puts "Usage:"
+  puts "  ruby bin/main.rb search <url_or_path> <query>"
+  puts "  ruby bin/main.rb duplicates <url_or_path>"
+  exit
+end
+
 clients = ClientLoader.load(source)
 
 case command
