@@ -1,6 +1,6 @@
 # ShiftCare CLI Technical Challenge
 
-This Ruby-based command-line application processes client data from a JSON source (URL or file). It provides the following features:
+This Ruby-based command-line application processes client data from a JSON source (URL). It provides the following features:
 
 - 🔍 **Search**: Find clients with names that partially match a given query.
 - 🔁 **Duplicates**: Identify clients with duplicate email addresses.
