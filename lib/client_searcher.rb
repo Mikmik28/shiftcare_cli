@@ -1,6 +1,6 @@
 class ClientSearcher
   def self.search_by_name(clients, query)
-    query.downcase!
+    query = query.downcase
     clients.select do |client|
       client.full_name.downcase.include?(query)
     end
