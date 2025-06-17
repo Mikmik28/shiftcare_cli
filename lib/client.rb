@@ -8,6 +8,8 @@ class Client
   end
 
   def split_name
+    return [nil, ''] if @full_name.nil? || @full_name.strip.empty?
+
     parts = @full_name.to_s.strip.split
     [parts.first, parts[1..].join(' ')]
   end
